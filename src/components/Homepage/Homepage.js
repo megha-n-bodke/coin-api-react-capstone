@@ -1,7 +1,5 @@
-import React from "react";
+import React from 'react';
 
-const Homepage = () => {
-  return <div>Currency Homepage</div>;
-};
+const Homepage = () => <div>Currency Homepage</div>;
 
 export default Homepage;

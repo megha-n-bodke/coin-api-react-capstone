@@ -1,6 +1,6 @@
-import React from "react";
-import { FaMicrophone, FaRegSun, FaSearch } from "react-icons/fa";
-import "./navbar.css";
+import React from 'react';
+import { FaMicrophone, FaRegSun, FaSearch } from 'react-icons/fa';
+import './navbar.css';
 
 const Navbar = () => (
   <div>
@@ -19,7 +19,7 @@ const Navbar = () => (
       </ul>
     </nav>
     <form className="form-inline ">
-      <input type="search" placeholder="Search" aria-label="Search"></input>
+      <input type="search" placeholder="Search" aria-label="Search" />
       <FaSearch className="search-icon" />
     </form>
   </div>
