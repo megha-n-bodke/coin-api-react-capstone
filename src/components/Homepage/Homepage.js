@@ -14,7 +14,7 @@ const Homepage = () => {
         <>
           <div
             className="col-6 d-flex flex-column"
-            onClick={() => navigate(`/details/${coin.name}`)}
+            onClick={() => navigate(`/details/${coin.id}`)}
           >
             <a>
               <FaArrowCircleRight />

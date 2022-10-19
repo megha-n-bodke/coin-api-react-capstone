@@ -1,12 +1,19 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import { getCoinsDetails } from "../../redux/homepage";
 
 const Detailspage = () => {
-  const coins = useSelector((state) => state.allcoins);
-  console.log(coins);
+  const { id } = useParams();
+  console.log(id);
+  const { companyId } = useSelector((state) => state.allcoins);
+  // console.log(companyId);
   const dispatch = useDispatch();
-  useEffect();
-  return <div>Detailspage</div>;
+  useEffect(() => {
+    dispatch(getCoinsDetails(id));
+  }, []);
+  console.log(id);
+  return <div>{companyId.symbol}</div>;
 };
 
 export default Detailspage;
