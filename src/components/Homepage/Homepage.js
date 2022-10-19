@@ -1,8 +1,10 @@
 import React from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import "./Homepage.css";
 const Homepage = () => {
+  const navigate = useNavigate();
   // allcoins comes from reducer alias in configure store.
   const { coins } = useSelector((state) => state.allcoins);
   console.log(`this store state ${coins}`);
@@ -10,7 +12,10 @@ const Homepage = () => {
     <div className="row">
       {coins.map((coin) => (
         <>
-          <div className="col-6 d-flex flex-column">
+          <div
+            className="col-6 d-flex flex-column"
+            onClick={() => navigate(`/details/${coin.name}`)}
+          >
             <a>
               <FaArrowCircleRight />
             </a>
