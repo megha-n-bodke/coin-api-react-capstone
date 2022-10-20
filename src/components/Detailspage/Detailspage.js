@@ -18,7 +18,7 @@ const Detailspage = () => {
         <img src={companyId.image.large} />
 
         <div>
-          <table className="details my-3 trst-unstyled">
+          <table>
             <tr>
               <td>Coin-id:</td>
               <td>{companyId.id}</td>
@@ -36,12 +36,12 @@ const Detailspage = () => {
               <td>{companyId.coingecko_score}</td>
             </tr>
             <tr>
-              <td>quidity-Score:</td>
-              {companyId.trquidity_score}
+              <td>Lquidity-Score:</td>
+              {companyId.liquidity_score}
             </tr>
             <tr>
-              <td>Hashing-Algorithm:</td>
-              {companyId.hashing_algorithm}
+              <td>Public Interest Score:</td>
+              {companyId.public_interest_score}
             </tr>
             <tr>
               <td>Last-Update:</td>

@@ -2,12 +2,13 @@
   height: 100px;
   width: 100px;
 }
-
-.details li:nth-of-type(even) {
-  background-color: #cf4278;
+table {
+  width: 100%;
+}
+tr {
   height: 50px;
 }
 
-.details li:nth-of-type(odd) {
-  height: 50px;
+table tr:nth-of-type(even) {
+  background-color: #cf4278;
 }
