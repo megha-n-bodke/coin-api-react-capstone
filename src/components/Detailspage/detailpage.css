@@ -1,0 +1,13 @@
+.coin-image {
+  height: 100px;
+  width: 100px;
+}
+
+.details li:nth-of-type(even) {
+  background-color: #cf4278;
+  height: 50px;
+}
+
+.details li:nth-of-type(odd) {
+  height: 50px;
+}

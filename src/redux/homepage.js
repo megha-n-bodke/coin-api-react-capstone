@@ -29,7 +29,6 @@ export const getCoinsDetails = createAsyncThunk(
     console.log("this is id.....");
     console.log(id);
     const { data } = await axios.get(`${coindetailsUrl}/${id}`);
-    console.log(data);
 
     dispatch({
       type: GETCOINSDETAILS,
