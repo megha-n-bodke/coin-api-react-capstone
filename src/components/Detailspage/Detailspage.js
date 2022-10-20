@@ -45,7 +45,7 @@ const Detailspage = () => {
             </tr>
             <tr>
               <td>Last-Update:</td>
-              {companyId.last_updated}
+              <td> {companyId.last_updated}</td>
             </tr>
           </table>
         </div>

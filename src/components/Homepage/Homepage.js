@@ -39,7 +39,7 @@ const Homepage = () => {
                 onClick={() => navigate(`/details/${coin.id}`)}
               >
                 <a>
-                  <FaArrowCircleRight />
+                  <FaArrowCircleRight className="my-2 navigation-arrow" />
                 </a>
                 <img src={coin.image} alt="coin image" className="coin-image" />
                 <p key={Math.random()}>{coin.name}</p>
