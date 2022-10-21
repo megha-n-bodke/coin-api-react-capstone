@@ -45,6 +45,10 @@ https://github.com/megha-n-bodke/coin-api-react-capstone
 
 - npm start
 
+## Run Tests
+
+- npm test
+
 ## Screen Shots
 
 ### Home Page
@@ -63,7 +67,7 @@ https://github.com/megha-n-bodke/coin-api-react-capstone
 
 [Vedio](https://www.loom.com/share/8c05d51e118a440b8f378623dbd51617)
 
-## Authors
+## Author
 
 👤 **Megha Bodke**
 

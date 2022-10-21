@@ -44,8 +44,6 @@ const coinData = (state = initialstate, action) => {
       };
 
     case GETCOINSDETAILS: {
-      console.log('this is details action');
-      console.log(action.paylod);
       return {
         ...state,
         companyId: action.payload,

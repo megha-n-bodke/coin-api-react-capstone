@@ -9,7 +9,6 @@ import { getConis } from './redux/Homepage/homepage';
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
-    console.log('in useEffect');
     dispatch(getConis());
   }, []);
   return (
