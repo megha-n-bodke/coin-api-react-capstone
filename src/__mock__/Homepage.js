@@ -1,9 +1,9 @@
-import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { ListGroup } from "react-bootstrap";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { ListGroup } from 'react-bootstrap';
 
 const Homepage = () => {
-  const coins = [{ id: 1, name: "Bitcoins", symbol: "btc" }];
+  const coins = [{ id: 1, name: 'Bitcoins', symbol: 'btc' }];
   return (
     <BrowserRouter>
       <h3>Currency</h3>

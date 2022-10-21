@@ -32,6 +32,7 @@ const Homepage = () => {
               if (coin.name.toLowerCase().includes(search.toLowerCase())) {
                 return coin;
               }
+              return null;
             })
             .map((coin) => (
               <div
@@ -42,7 +43,7 @@ const Homepage = () => {
                   className="my-2 navigation-arrow"
                   onClick={() => navigate(`/details/${coin.id}`)}
                 />
-                <img src={coin.image} className="coin-image" />
+                <img src={coin.image} className="coin-image" alt="" />
                 <p key={Math.random()}>{coin.name}</p>
                 <p>{coin.symbol}</p>
               </div>
