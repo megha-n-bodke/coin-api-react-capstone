@@ -37,11 +37,11 @@ const Detailspage = () => {
             </tr>
             <tr>
               <td>Lquidity-Score:</td>
-              {companyId.liquidity_score}
+              <td>{companyId.liquidity_score}</td>
             </tr>
             <tr>
               <td>Public Interest Score:</td>
-              {companyId.public_interest_score}
+              <td> {companyId.public_interest_score}</td>
             </tr>
             <tr>
               <td>Last-Update:</td>
