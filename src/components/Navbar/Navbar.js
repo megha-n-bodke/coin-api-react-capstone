@@ -1,16 +1,18 @@
-import React from "react";
-import { FaMicrophone, FaRegSun, FaSearch } from "react-icons/fa";
-import "./navbar.css";
+import React from 'react';
+import { FaAngleLeft, FaMicrophone, FaRegSun } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
-  const Search = (data) => {
-    console.log(data);
-  };
+  const navigate = useNavigate();
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg ">
+        <FaAngleLeft onClick={() => navigate('/')} />
+
         <a className="navbar-brand fontcolor" href="/">
-          Navbar
+          Currency
         </a>
 
         <ul className="navbar-nav mr-auto d-flex flex-column">
@@ -22,15 +24,6 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <form className="form-inline ">
-        <input
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-          onChange={(e) => Search(e.target.value)}
-        />
-        <FaSearch className="search-icon" />
-      </form>
     </div>
   );
 };

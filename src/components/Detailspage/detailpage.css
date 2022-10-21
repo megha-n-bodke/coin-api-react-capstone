@@ -1,0 +1,16 @@
+.coin-image {
+  height: 100px;
+  width: 100px;
+}
+
+table {
+  width: 100%;
+}
+
+tr {
+  height: 50px;
+}
+
+table tr:nth-of-type(even) {
+  background-color: #cf4278;
+}
