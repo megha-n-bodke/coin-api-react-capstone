@@ -65,6 +65,10 @@ $ git clone {repository URL}
 
 [Live Preview](https://meghageckocoin.netlify.app)
 
+## Vedio Demo
+
+[Vedio](https://www.loom.com/share/8c05d51e118a440b8f378623dbd51617)
+
 ## Authors
 
 👤 **Megha Bodke**
