@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-import coinData from './redux/homepage';
+import coinData from './Homepage/homepage';
 
 const root = combineReducers({
   allcoins: coinData,

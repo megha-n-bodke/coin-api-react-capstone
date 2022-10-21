@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getCoinsDetails } from '../../redux/homepage';
+import { getCoinsDetails } from '../../redux/Homepage/homepage';
 import './detailpage.css';
 
 const Detailspage = () => {

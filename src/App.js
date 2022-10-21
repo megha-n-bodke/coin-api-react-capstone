@@ -4,7 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Detailspage from './components/Detailspage/Detailspage';
 import Homepage from './components/Homepage/Homepage';
 import Navbar from './components/Navbar/Navbar';
-import { getConis } from './redux/homepage';
+import { getConis } from './redux/Homepage/homepage';
 
 function App() {
   const dispatch = useDispatch();
