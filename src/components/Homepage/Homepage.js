@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import { FaArrowCircleRight, FaSearch } from "react-icons/fa";
-import { useSelector, useStore } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import "./Homepage.css";
-import "../Navbar/navbar.css";
+import React, { useState } from 'react';
+import { FaArrowCircleRight, FaSearch } from 'react-icons/fa';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import './Homepage.css';
+import '../Navbar/navbar.css';
 
 const Homepage = () => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const navigate = useNavigate();
   // allcoins comes from reducer alias in configure store.
   const { coins } = useSelector((state) => state.allcoins);
@@ -23,30 +23,31 @@ const Homepage = () => {
         <FaSearch className="search-icon my-4" />
       </form>
       <div className="row ps-2">
-        {coins
-          .filter((coin) => {
-            if (search === "") {
-              return coin;
-            }
-            if (coin.name.toLowerCase().includes(search.toLowerCase())) {
-              return coin;
-            }
-          })
-          .map((coin) => (
-            <>
+        <>
+          {coins
+            .filter((coin) => {
+              if (search === '') {
+                return coin;
+              }
+              if (coin.name.toLowerCase().includes(search.toLowerCase())) {
+                return coin;
+              }
+            })
+            .map((coin) => (
               <div
+                key={coin.id}
                 className="col-6 d-flex flex-column py-2 h-25 w-50 "
-                onClick={() => navigate(`/details/${coin.id}`)}
               >
-                <a>
-                  <FaArrowCircleRight className="my-2 navigation-arrow" />
-                </a>
-                <img src={coin.image} alt="coin image" className="coin-image" />
+                <FaArrowCircleRight
+                  className="my-2 navigation-arrow"
+                  onClick={() => navigate(`/details/${coin.id}`)}
+                />
+                <img src={coin.image} className="coin-image" />
                 <p key={Math.random()}>{coin.name}</p>
                 <p>{coin.symbol}</p>
               </div>
-            </>
-          ))}
+            ))}
+        </>
       </div>
     </>
   );

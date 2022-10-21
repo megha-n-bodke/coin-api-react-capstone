@@ -1,7 +1,7 @@
-import React from "react";
-import { FaAngleLeft, FaMicrophone, FaRegSun } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
-import "./navbar.css";
+import React from 'react';
+import { FaAngleLeft, FaMicrophone, FaRegSun } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
+import './navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -9,9 +9,8 @@ const Navbar = () => {
   return (
     <div>
       <nav className="navbar navbar-expand-lg ">
-        <a>
-          <FaAngleLeft onClick={() => navigate("/")} />
-        </a>
+        <FaAngleLeft onClick={() => navigate('/')} />
+
         <a className="navbar-brand fontcolor" href="/">
           Currency
         </a>

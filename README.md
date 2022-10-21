@@ -84,7 +84,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## Acknowledgments
 
-- Thanks to
+- Thanks to Nelson Sakwa for original design.
 - Thanks to [Microverse](https://www.microverse.org/) for giving this opportunity to learn ...
 - Code Reviewers & Coding Partners.
 - Hat tip to anyone whose code was used.
