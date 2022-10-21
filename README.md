@@ -37,12 +37,6 @@ https://github.com/megha-n-bodke/coin-api-react-capstone
 
 - Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
 
-- syntax:
-
-```
-$ git clone {repository URL}
-```
-
 ## Install Dependencies(with following Command)
 
 - npm install
