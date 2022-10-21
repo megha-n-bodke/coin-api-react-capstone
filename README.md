@@ -63,7 +63,7 @@ $ git clone {repository URL}
 
 ## Live Preview
 
-[Live Preview](https://companies-information.netlify.app)
+[Live Preview](https://meghageckocoin.netlify.app)
 
 ## Authors
 
