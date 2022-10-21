@@ -1,39 +1,36 @@
-import { createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import { createAsyncThunk } from "@reduxjs/toolkit";
+import axios from "axios";
 
-const GETCOINS = 'GETCOINS';
-const GETCOINSDETAILS = 'GETCOINSDETAILS';
-const baseUrl = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false';
-const coindetailsUrl = 'https://api.coingecko.com/api/v3/coins';
+const GETCOINS = "GETCOINS";
+const GETCOINSDETAILS = "GETCOINSDETAILS";
+const baseUrl =
+  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false";
+const coindetailsUrl = "https://api.coingecko.com/api/v3/coins";
 
 // Action creator
 export const getConis = createAsyncThunk(
   GETCOINS,
   async (args, { dispatch }) => {
     const { data } = await axios.get(baseUrl);
-    // console.log("in action");
-    // console.log(data);
 
     dispatch({
       type: GETCOINS,
       payload: data,
     });
-  },
+  }
 );
 
 // action for coin details by id
 export const getCoinsDetails = createAsyncThunk(
   GETCOINSDETAILS,
   async (id, { dispatch }) => {
-    console.log('this is id.....');
-    console.log(id);
     const { data } = await axios.get(`${coindetailsUrl}/${id}`);
 
     dispatch({
       type: GETCOINSDETAILS,
       payload: data,
     });
-  },
+  }
 );
 
 // reducer
@@ -48,7 +45,7 @@ const coinData = (state = initialstate, action) => {
       };
 
     case GETCOINSDETAILS: {
-      console.log('this is details action');
+      console.log("this is details action");
       console.log(action.paylod);
       return {
         ...state,
